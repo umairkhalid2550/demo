@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Portfolio</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    .dj{
+          font-family: "Kanit", sans-serif;
+          font-weight: 600;
+          
+    }
+    body{
+        background-color: rgba(19, 18, 18, 0.959);
+        margin: 0;
+        background-color: #010101;
+        padding: 0;
+    }
+    .skill-main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        
+    }
+    .skill-main2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 1%;
+        width: auto;
+    }
+    .single-skill-main{
+        padding: 20px;
+        border-radius: 7px;
+        background-color: transparent;
+        width: auto;
+        /* box-shadow: 2px 4px 12px rgb(145, 138, 138); */
+        border: 2px solid rgb(17, 216, 17);
+        box-shadow: 2px 2px 10px rgb(17, 216, 17);
+        color: white;
+    }
+    .single-skill-main2{
+        padding: 20px;
+        border-radius: 7px;
+        background-color: rgb(160, 154, 154);
+        width: auto;
+        
+    }
+
+    img{
+        height: 130px;
+        margin: 2px 0%;
+    }
+    .logo{
+        height: 80px;
+        padding-left: 10px;
+        margin: 0;
+        padding-top: 10px;
+    }
+    p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+    }
+    h3{
+        padding-top: 20px;
+        font-family:sans-serif;
+        font-family: "Kanit", sans-serif;
+    }
+    h1{
+        text-align: center;
+        padding-top: 20px;
+        font-family:sans-serif;
+        color: white;
+        margin: 6% 6%;
+        font-size: 35px;
+    }
+    .contact-title-main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .hr1{
+        width: 30%;
+        height: 1px;
+        margin-right: 22px;
+        margin-top: 10%;
+        color:rgb(17, 216, 17);
+        background-color: rgb(17, 216, 17);
+    }
+    .hr2{
+        width: 30%;
+        height: 1px;
+        margin-left: 22px;
+        margin-top: 10%;
+        color:rgb(17, 216, 17);
+        background-color: rgb(17, 216, 17);
+    }
+    .hr3{
+        width: 30%;
+        height: 1px;
+        margin-right: 22px;
+        margin-top: 5%;
+        color:rgb(17, 216, 17);
+        background-color: rgb(17, 216, 17);
+    }
+    .hr4{
+        width: 30%;
+        height: 1px;
+        margin-left: 22px;
+        margin-top: 5%;
+        color:rgb(17, 216, 17);
+        background-color: rgb(17, 216, 17);
+    }
+    .contact-title{
+        text-align: center;
+        padding-top: 20px;
+        font-family:sans-serif;
+        color: white;
+        margin: 6.8% 0 4% 0%;
+        font-size: 35px;
+    }
+    .contact-main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .email{
+        background-color: rgba(19, 18, 18, 0.959);
+        border-radius: 3px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding:0px 12px;
+        color:rgb(17, 216, 17);
+    }
+    .phone{
+        background-color: rgba(19, 18, 18, 0.959);
+        border-radius: 3px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding:0px 12px;
+        color:rgb(17, 216, 17);
+    }
+    .upwork{
+        background-color: rgba(19, 18, 18, 0.959);
+        border-radius: 3px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding:2px 5px;
+        color:rgb(17, 216, 17);
+        margin: 10px 40%;
+        text-align: center;
+    }
+    .contact-icons{
+        text-align: center;
+        padding-top: 20px;
+        font-family:sans-serif;
+        color: white;
+        margin: 1.2% 2.7% 4% 2.7%;
+        font-size: 35px;
+    }
+    .date{
+        color:rgb(17, 216, 17);
+        padding-top: 1px;
+    }
+    footer{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        color: white;
+        gap: 10px;
+        margin-top: 6%;
+        border-top: 2px solid grey;
+        width: 100%;
+          font-family: "Kanit", sans-serif;
+
+    }
+    h4{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    nav{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 14px;
+    }
+    ul{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 22px;
+        padding: 18px;
+        font-size: 19px;
+        border-radius: 64px;
+        
+        border: 1.5px solid white;
+        margin-left: 4%;
+
+    }
+    li{
+        font-weight: 500;
+        font-family: monospace;
+        font-size: 18px;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: "Kanit", sans-serif;
+        list-style-type: none;
+    }
+    li:hover{
+        color: rgb(17, 216, 17);
+        cursor: pointer;
+    }
+    button{
+        height: fit-content;
+        padding: 10px 33px;
+        border-radius: 2px;
+        background-color: rgb(17, 216, 17);
+        color: white;
+        font-weight: 700;
+        border: 2px solid rgb(17, 216, 17);
+        margin-right: 10px;
+        margin-top: 15px;
+        box-shadow: 2px 2px 10px rgb(145, 138, 138);
+    }
+    button:hover{
+        cursor: pointer;
+        
+    }
+    header{
+        margin-top: 4%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        
+    }
+    .user{
+        height: 500px;
+        margin:-13% 11% 2px 8%;
+    }
+    .user-main{
+        width: 40%;
+    }
+    .top-left{
+        width: 40%;
+        margin-top: 4%;
+    }
+    .intro-title{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    .name{
+        text-align: center;
+        font-family:sans-serif;
+        color: white;
+        font-size: 55px;
+        color: rgb(17, 216, 17);
+        margin: 0;
+        
+    }
+    .im{
+        font-size: 26px;
+        color: white;
+        padding-top: 12px;
+    }
+    .intro-para{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        margin-top: 0%;
+        line-height: 25px;
+        
+    }
+    .hire-me{
+        margin-top: 5%;
+        border-radius: 5px;
+        padding: 12px 29px;
+        background-color: transparent;
+        color: rgb(17, 216, 17);
+    }
+    .hire-me:hover{
+        border: 2px solid white;
+        box-shadow: 2px 2px 10px rgb(17, 216, 17);
+    }
+    .lets-work{
+        border: 1.3px solid white;
+        border-radius: 65px;
+        padding: 13px 30px;
+        margin-top: 27px;
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 15px;
+        
+
+    }
+    
+    .image-container {
+        height: 600px; /* Adjust the height as needed */
+        overflow: hidden;
+        position: relative;
+        width: fit-content;
+    }
+
+    /* Set the image as a background */
+    .image-container img {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        transition: transform 10s ease-in-out;
+    }
+
+    /* Add a hover effect to scroll the image */
+    .image-container:hover img {
+        transform: translateY(-90%);
+    }
+    .portfolio-main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        background-color: rgba(19, 18, 18, 0.959);
+        padding: 30px;
+    }
+    .first-port{
+        height: 400px;
+        margin: 0;
+    }
+    .second-port{
+        height: 430px;
+        margin: 0;
+    }
+    .text-container {
+    font-size: 26px;
+    margin-bottom: 2%;
+    font-family: monospace;
+    font-weight: 800;
+    margin-bottom: 10px;
+    position: relative;
+    opacity: 0;
+    animation: moveAndStay 1s ease-in-out forwards;
+}
+.foot{
+      font-family: "Kanit", sans-serif;
+
+}
+
+/* Keyframes for the moveAndStay animation */
+@keyframes moveAndStay {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* Additional styling to hide the text when not animating */
+.hidden {
+    display: none;
+}
+
+.first-exp{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    margin-left: 18%;
+    margin-top: -7%;
+}
+.first-exp2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    
+    
+}
+.first-exp span{
+    color: rgb(17, 216, 17);
+    font-weight: 900;
+    font-size: 90px;
+    width: fit-content;
+}
+.first-exp h2{
+    color: white;
+    margin-top: 60px;
+    font-family: monospace;
+    font-size: 25px;
+}
+.hr5{
+    width: 1px;
+    height: auto;
+    background-color: white;
+    float: left;
+    margin-left: 18.7%;
+    margin-top: -10px;
+    margin-right: 3%;
+}
+.hide{
+    display: none;
+}
+.list{
+    display: none;
+    border: none;
+    background-color: rgb(160, 154, 154);
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-radius: 0;
+    margin: 0;
+}
+
+.about-head{
+    text-align: left;
+    margin: 6% 6% 3% 6%;
+}
+
+.portfolio-head{
+    text-align: left;
+    margin: 6% 6% 3% 6%;
+}
+.experience-head{
+    text-align: left;
+    margin: 6% 6% 3% 6%;
+}
+
+.skill-head{
+    text-align: left;
+    margin: 6% 6% 3% 6%;
+}
+
+.skill-paras{
+    width: 200px;
+}
+
+.lets-work:hover{
+    border: 1px solid rgb(17, 216, 17);
+    box-shadow: 2px 2px 10px rgb(145, 138, 138);
+}
+
+@media (max-width: 927px) {
+    .top-left {
+        width: 70%;
+    }
+    
+}
+
+@media (max-width:706px) {
+    .skill-paras{
+        width: 260px;
+    }
+}
+
+@media (max-width: 613px) {
+    .name {
+        font-size: 46px;
+        margin-top: 2%;
+    }
+    
+}
+
+@media (max-width: 613px) {
+    .name {
+        font-size: 41px;
+        margin-top: 4%;
+    }
+    .top-left{
+        width: 76%;
+    }
+    .user-main{
+        width: 100%;
+    }
+    .user-main img{
+        margin: auto;
+        height: 382px;
+    }
+    .contact-title {
+        margin-top: 3.2%;
+        font-size: 27px;
+    }
+    .first-port{
+        width: 100%;
+    }
+    .hr1{
+        width: 19%;
+        margin-top: 10.2%;
+    }
+    .hr2{
+        width: 19%;
+        margin-top: 10.2%;
+    }
+    .about-head{
+        font-size: 33px;
+        margin: 12% 6% 3% 6%;
+    }
+    .portfolio-head{
+        text-align: left;
+        margin: 12% 6% 3% 6%;
+        font-size: 33px;
+    }
+    .skill-head{
+        text-align: left;
+        margin: 12% 6% 3% 6%;
+        font-size: 33px;
+    }
+    .experience-head{
+        text-align: left;
+        margin: 12% 6% 3% 6%;
+        font-size: 33px;
+    }
+}
+
+</style>
+<body>
+    <nav class="nav">
+        <a href="./Home.html">
+            <img class="logo" src="./assets/images/logo3.png" alt="">
+        </a>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Skills</li>
+            <li>Experience</li>
+            <li>Contact Us</li>
+        </ul>
+        <button onclick="showing()" class="lets-work">LET'S WORK</button>
+    </nav>
+
+    <nav class="toggle">
+        <img class="logo" src="./assets/images/logo3.png" alt="">
+        <button onclick="Showing()" class="lets-work">=</button>
+    </nav>
+    <span>
+        <ul class="list">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Skills</li>
+            <li>Experience</li>
+            <li>Contact Us</li>
+        </ul>
+    </span>
+    <!-- <div class="text-container" id="textDisplay" style="color: white;text-align: center;"></div> -->
+    <header>
+        <div class="top-left">
+            <main class="intro-title"><h4 class="im">I'm</h4><h1 class="name">Naveed Asif</h1></main>
+            <p class="intro-para">A full stack developer and CISCO expert with 6 years of experience. I can provide you quality work in cheap price. I have a cool skills like <span style="color: rgb(17, 216, 17);">ReactJS , Django , CISCO , Tailwind CSS </span>and more. I have a top rated profile of upwork with amazing testimonials.</p>
+            <a href="https://upwork.com"><button class="hire-me" >HIRE ME</button></a>
+        </div>
+        <main class="user-main">
+            <img src="./assets/images/20240727080812638.png" alt="" class="user">
+        </main>
+    </header>
+
+    <main>
+        <h1 class="about-head">About Me</h1>
+        <p style="width: 70%;margin: 0% 15%;color: white;">I am a full stack developer and CISCO expert with 6 years of experience. I can provide you quality work in cheap price. I have a cool skills like <span style="color: rgb(17, 216, 17);">ReactJS , Django , CISCO , Tailwind CSS </span>and more. I have a top rated profile of upwork with amazing testimonials. I doing work in Arbi soft company for 3 yaears soo i have 3 years of experiance of multinational company in lahore . i have a certificate of CISCO and full stack developer. I recently work on QATAR government project name is Kalam Time and more projects. Scroll down to see my work on different websites. </p>
+    </main>
+
+    <main>
+        <h1 class="portfolio-head">My Portfolio</h1>
+        <div class="portfolio-main">
+            <img src="./assets/images/home1.png" alt="" class="first-port">
+            <div class="image-container" onmouseover="startScroll()" onmouseout="stopScroll()">
+                <img src="./assets/images/karlstorz.webp" alt="">
+            </div>
+        </div>
+    </main>
+
+    <h1 class="skill-head">My Skills</h1>
+    <main class="skill-main">
+        <div class="single-skill-main2">
+            <img src="./assets/images/images__2_-removebg-preview (1).png" alt="" style="height: 95px;margin: 0px 45px;">
+            <h3>React JS</h3>
+            <p class="skill-paras">I provide full stack development skill in a cheap price.</p>
+        </div>
+
+        <div class="single-skill-main2">
+            <img src="./assets/images/django.png" alt="" style="height: 98px;margin: 0px 28px;">
+            <h3 class="dj">Django</h3>
+            <p class="skill-paras">I will handle your DB & backend data with sql server in Django.</p>
+        </div>
+
+
+        <div class="single-skill-main2">
+            <img src="./assets/images/images__2_-removebg-preview.png" alt="" style="margin-top: -20px;">
+            <h3>Python</h3>
+            <p class="skill-paras">I will design and make your site catchy with latest tailwindcss.</p>
+        </div>
+
+    </main>
+    <main class="skill-main2">
+        <div class="single-skill-main2">
+            <img src="./assets/images/images-removebg-preview.png" alt="" style="height: 130px;">
+            <h3>CISCO</h3>
+            <p class="skill-paras">I can provide cisco network service soo i have cisco certification.</p>
+        </div>
+
+        <div class="single-skill-main">
+            <img src="./assets/images/logo8.png" alt="" style="height: 98px;margin: 0px 47px;">
+            <h3>Wordpress</h3>
+            <p class="skill-paras">I can customise and redesign your wordpress site in cheap price.</p>
+        </div>
+
+
+        <div class="single-skill-main2">
+            <img src="./assets/images/images__3_-removebg-preview.png" alt="" style="margin: 0px 38px;">
+            <h3>Bootstrap</h3>
+            <p class="skill-paras">I will design your site with bootstrap classes that make your site attractive.</p>
+        </div>
+        
+
+    </main>
+
+    <main class="skill-main2">
+        <div class="single-skill-main2">
+            <img src="./assets/images/logo7.png" alt="" style="height: 98px;margin: 0px 66px;">
+            <h3>CSS</h3>
+            <p class="skill-paras">Framework7 is latest framework soo i'll design site & mobile app.</p>
+        </div>
+
+        <div class="single-skill-main2">
+            <img src="./assets/images/images__6_-removebg-preview.png" alt="" style="margin: auto 40px;">
+            <h3>HTML</h3>
+            <p class="skill-paras">I will create your site in HTML & HTML5 & make it resp with qualtiy work.</p>
+        </div>
+
+
+        <div class="single-skill-main2">
+            <img src="./assets/images/images__3_-removebg-preview (1).png" alt="" style="height: 88px;margin: 0px 28px;">
+            <h3>Tailwind CSS</h3>
+            <p class="skill-paras">I can design your site with simple css and make it responsive.</p>
+        </div>
+
+    </main>
+
+
+    <main style="margin-bottom: 10%;">
+        <h1 class="experience-head">Experience</h1>
+        <section style="margin-top: 10%;padding-bottom: 14px;background-color: rgba(19, 18, 18, 0.959);">
+            <div class="first-exp">
+                <span>.</span>
+                <h2>Full Stack Developer</h2>
+            </div>
+            <div class="first-exp2">
+                <hr class="hr5">
+                <p style="color: white;width: 60%;">A full stack developer and CISCO expert with 6 years of experience. I can provide you quality work in cheap price. I have a cool skills like <span style="color: rgb(17, 216, 17);">ReactJS , Django , CISCO , Tailwind CSS </span>and more. I have a top rated profile of upwork with amazing testimonials.A full stack developer and CISCO expert with 6 years of experience. I can provide you quality work in cheap price. I have a cool skills like <span style="color: rgb(17, 216, 17);">ReactJS , Django , CISCO , Tailwind CSS </span>and more. I have a top rated profile of upwork with amazing testimonials.A full stack developer and CISCO expert with 6 years of experience. I can provide you quality work in cheap price. I have a cool skills like <span style="color: rgb(17, 216, 17);">ReactJS , Django , CISCO , Tailwind CSS </span>and more. I have a top rated profile of upwork with amazing testimonials.</p>
+            </div>
+
+            <div class="first-exp" style="margin-top: -3%;">
+                <span>.</span>
+                <h2>CISCO Expert</h2>
+            </div>
+            <div class="first-exp2">
+                <hr class="hr5">
+                <p style="color: white;width: 60%;">A full stack developer and CISCO expert with 6 years of experience. I can provide you quality work in cheap price. I have a cool skills like <span style="color: rgb(17, 216, 17);">ReactJS , Django , CISCO , Tailwind CSS </span>and more. I have a top rated profile of upwork with amazing testimonials.A full stack developer and CISCO expert with 6 years of experience. I can provide you quality work in cheap price. I have a cool skills like <span style="color: rgb(17, 216, 17);">ReactJS , Django , CISCO , Tailwind CSS </span>and more. I have a top rated profile of upwork with amazing testimonials.</p>
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <main class="contact-title-main">
+            <hr class="hr1">
+            <h1 class="contact-title">Contact Me</h1>
+            <hr class="hr2">
+        </main>
+        
+        <main class="contact-main">
+            <div class="email" style="display: flex;gap: 10px;flex-wrap: nowrap;">
+                <i class="fa fa-envelope" style="font-size:24px;margin-top: 15px;height: fit-content;color: white;"></i>
+                <p>ronaldo@goat.com</p>
+            </div>
+            <div class="phone" style="display: flex;gap: 10px;flex-wrap: nowrap;">
+                <i class="fa fa-phone" style="font-size:24px;margin-top: 15px;height: fit-content;color: white;"></i>
+                <p>+92 300 5076168</p>
+            </div>
+        </main>
+        <div class="upwork">
+            <i class='far fa-comment-alt' style='font-size:36px'></i>
+            <p>+61 401 436 905</p>
+        </div>
+
+        <main class="contact-title-main">
+            <hr class="hr3">
+            <h1 class="contact-icons">
+                <i class="fa fa-facebook-f" style="font-size:26px"></i>
+                <i class="fa fa-twitter" style="font-size:30px;color: blue;"></i>
+                <i class="fa fa-linkedin-square" style="font-size:28px"></i>
+                <i class="fa fa-instagram" style="font-size:28px;color: rgb(241, 73, 129);"></i>
+            </h1>
+            <hr class="hr4">
+        </main>
+    </section>
+
+    <footer>
+        <h4 id="foot">Copyright <h4 class="date">@2024</h4></h4><h4>Rehan's Portfolio</h4>
+    </footer>
+    
+<script>
+
+        var wid=window.innerWidth
+        console.log(wid)
+        if(wid <= 927){
+            var navbar=document.querySelector(".nav")
+            var ShowToggle=document.querySelector(".toggle")
+            navbar.classList.toggle("hide");
+            ShowToggle.classList.toggle("show");
+            
+        }
+        else{
+            var navbar=document.querySelector(".nav")
+            var ShowToggle=document.querySelector(".toggle")
+            navbar.classList.toggle("show");
+            ShowToggle.classList.toggle("hide");
+        }
+
+        function Showing(){
+            var list=document.querySelector(".list")
+            list.style.display="block"
+
+        }
+
+
+    // // Array of your texts
+    // const texts = ["Full Stack Developer" ,"CISCO Expert", "Wordpress Developer"];
+
+    // // Function to display texts one after the other
+    // function displayTexts() {
+    //     const textContainer = document.getElementById("textDisplay");
+    //     let currentIndex = 0;
+
+    //     setInterval(() => {
+    //         // Update the animation for the current text
+    //         textContainer.classList.add("hidden");
+    //         void textContainer.offsetWidth; // Trigger reflow
+    //         textContainer.classList.remove("hidden");
+    //     }, 2000); // Change 4000 to the desired interval in milliseconds (e.g., 4000 for 4 seconds)
+
+    //     setInterval(() => {
+    //         // Update the content of the container
+    //         textContainer.textContent = texts[currentIndex];
+    //         currentIndex = (currentIndex + 1) % texts.length;
+    //     }, 2000); // Change 6000 to the desired interval in milliseconds (e.g., 6000 for 6 seconds)
+    // }
+
+    // // Call the function to start displaying texts
+    // displayTexts();
+
+        
+    
+</script>
+</body>
+</html>
